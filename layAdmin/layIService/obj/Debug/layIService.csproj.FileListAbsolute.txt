@@ -1,0 +1,13 @@
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\layIService.dll
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\layIService.pdb
+E:\study\layuiAdmin\layAdmin\layIService\obj\Debug\layIService.csprojAssemblyReference.cache
+E:\study\layuiAdmin\layAdmin\layIService\obj\Debug\layIService.csproj.CoreCompileInputs.cache
+E:\study\layuiAdmin\layAdmin\layIService\obj\Debug\layIService.dll
+E:\study\layuiAdmin\layAdmin\layIService\obj\Debug\layIService.pdb
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\layModel.dll
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\EntityFramework.dll
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\layModel.pdb
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\layModel.dll.config
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\EntityFramework.xml
+E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\study\layuiAdmin\layAdmin\layIService\obj\Debug\layIService.csproj.CopyComplete

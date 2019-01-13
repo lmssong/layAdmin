@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutFrame.cshtml";
+}
+
+<table class="layui-hide" id="articles"></table>
+
+
+<script>
+    layui.use('table', function () {
+        var table = layui.table;
+
+        table.render({
+            elem: '#articles'
+            , url: '/Articles/GetArticlesInfos'
+            , cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+            , page: true //开启分页
+            , toolbar: '#barDemo' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
+            , cols: [[
+                { field: 'KID', width: 80, title: 'ID', sort: true }
+                , { field: 'Title', width: 80, title: '标题', sort: true }
+                , { field: 'TitleDescription', width: 80, title: '描述' }
+                , { field: 'Category', title: '分类', minWidth: 100 } //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+                , { field: 'Content', title: '内容', width: '30%', sort: true }
+                , { field: 'Author', title: '作者', sort: true }
+                , { field: 'ImgUrl', title: '图片地址', sort: true }
+                , { field: 'CreateDate', title: '创建时间', sort: true }
+            ]]
+        });
+    });
+
+    //文章添加
+    function addArticles() {
+      var edit =  layer.open({            
+            type: 2,
+            shade: false,
+            area: ['1000px', '500px'],
+            maxmin: true,
+            content: '/Articles/edit',
+           scrollbar: true
+        });
+        layer.full(edit);
+    }
+
+</script>
+
+<script type="text/html" id="barDemo">
+    <a class="layui-btn  layui-btn-xs" lay-event="add" onclick="addArticles();">新增</a>
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>

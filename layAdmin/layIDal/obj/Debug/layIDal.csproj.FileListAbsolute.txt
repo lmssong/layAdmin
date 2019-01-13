@@ -1,0 +1,13 @@
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\layIDal.dll
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\layIDal.pdb
+E:\study\layuiAdmin\layAdmin\layIDal\obj\Debug\layIDal.csprojAssemblyReference.cache
+E:\study\layuiAdmin\layAdmin\layIDal\obj\Debug\layIDal.csproj.CoreCompileInputs.cache
+E:\study\layuiAdmin\layAdmin\layIDal\obj\Debug\layIDal.dll
+E:\study\layuiAdmin\layAdmin\layIDal\obj\Debug\layIDal.pdb
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\layModel.dll
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\EntityFramework.dll
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\layModel.pdb
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\layModel.dll.config
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\EntityFramework.xml
+E:\study\layuiAdmin\layAdmin\layIDal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\study\layuiAdmin\layAdmin\layIDal\obj\Debug\layIDal.csproj.CopyComplete
