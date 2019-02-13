@@ -11,3 +11,16 @@ E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\layModel.dll.config
 E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\EntityFramework.xml
 E:\study\layuiAdmin\layAdmin\layIService\bin\Debug\zh-Hans\EntityFramework.resources.dll
 E:\study\layuiAdmin\layAdmin\layIService\obj\Debug\layIService.csproj.CopyComplete
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\layIService.dll
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\layIService.pdb
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\layModel.dll
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\EntityFramework.dll
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\layModel.pdb
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\layModel.dll.config
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\EntityFramework.xml
+E:\study\layAdmin\layAdmin\layIService\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\study\layAdmin\layAdmin\layIService\obj\Debug\layIService.csprojAssemblyReference.cache
+E:\study\layAdmin\layAdmin\layIService\obj\Debug\layIService.csproj.CoreCompileInputs.cache
+E:\study\layAdmin\layAdmin\layIService\obj\Debug\layIService.csproj.CopyComplete
+E:\study\layAdmin\layAdmin\layIService\obj\Debug\layIService.dll
+E:\study\layAdmin\layAdmin\layIService\obj\Debug\layIService.pdb

@@ -13,7 +13,7 @@
           <Property Name="Title" Type="varchar" MaxLength="1000" />
           <Property Name="TitleDescription" Type="varchar" MaxLength="2000" />
           <Property Name="Category" Type="varchar" MaxLength="200" />
-          <Property Name="Content" Type="varchar" MaxLength="10000" />
+          <Property Name="Content" Type="longtext" />
           <Property Name="Author" Type="varchar" MaxLength="500" />
           <Property Name="ImgUrl" Type="varchar" MaxLength="1000" />
           <Property Name="CreateDate" Type="datetime" Precision="0" />

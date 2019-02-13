@@ -14,12 +14,13 @@ namespace layAdmin.Controllers
         private IArticlesService _articlesService = ServiceFactory.GetService<ArticlesService, IArticlesService>();
        
         // GET: Articles
-        public ActionResult Index()
+        public ActionResult index()
         {
             return View();
         }
 
         // GET: Articles
+        [ValidateInput(false)]
         public ActionResult edit()
         {
             return View();
@@ -27,24 +28,37 @@ namespace layAdmin.Controllers
 
         public string GetArticlesInfos()
         {
-            var list = _articlesService.GetInfos(p => p.KID != null);
-            List<articles> articles = list.ToList<articles>();
-            TableResult res = new TableResult
+            var msg = "";
+            var result = "";
+            try
             {
-                code = 0,
-                msg = "",
-                count = articles.Count,
-                data = articles.ToArray()
+                var list = _articlesService.GetInfos(p => p.KID != null);
+                List<articles> articles = list.ToList<articles>();
+                TableResult res = new TableResult
+                {
+                    code = 0,
+                    msg = "",
+                    count = articles.Count,
+                    data = articles.ToArray()
 
-            };
-            var result = JsonConvert.SerializeObject(res);
-            return result;
+                };
+                result = JsonConvert.SerializeObject(res);
+                LogHelper.WriteLogs(result);
+            }
+            catch (Exception ex) {
+
+                LogHelper.WriteLogs(ex.Message);
+                msg = ex.Message;
+            }
+            return string.IsNullOrEmpty(msg) ? result : "查询数据发生异常，请查看日志";
         }
 
         [HttpPost]
+        [ValidateInput(false)]
         public string Save()
         {
-            var saveData = Request.Params["saveData"];
+            string saveData = Request.Params["saveData"];
+            saveData = saveData.Replace("\r\n", "<br/>").Replace("\\n", "<br/>").Replace(" ", "&nbsp;");
             articles entity = JsonConvert.DeserializeObject<articles>(saveData);
             bool isSave = _articlesService.Add(entity);
             return isSave ? "1" : "0";

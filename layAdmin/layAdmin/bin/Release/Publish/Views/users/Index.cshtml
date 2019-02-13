@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutFrame.cshtml";
+}
+
+<table class="layui-hide" id="users"></table>
+
+
+<script>
+    layui.use('table', function () {
+        var table = layui.table;
+
+        table.render({
+            elem: '#users'
+            , url: '/Users/GetUserInfos'
+            , cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+            , cols: [[
+                { field: 'KID', width: 80, title: 'ID', sort: true }
+                , { field: 'NAME', width: 80, title: '名称', sort: true }
+                , { field: 'SEX', width: 80, title: '性别' }
+                , { field: 'AGE', title: '年龄', width: '30%', minWidth: 100 } //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+                , { field: 'ADDRESS', title: '地址', sort: true }
+            ]]
+        });
+    });
+</script>
